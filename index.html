@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.: Gama Academy :.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <header>
+        <div><img src="img/logo-sem-fundo-cortada.png" alt="Logo Leopoldo Developed"></div>
+        <ul>
+            <li><a target="_blank" href="https://github.com/leo-demetrio/">github</a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/leopoldo-dev/">linkedin</a></li>
+            <li><a target="_blank" href="mailto:teste@teste.com">email</a></li>
+            <li><a target="_blank" href="https://wa.me/1199999999">whatsApp</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Leo C. Demetrio</h1>
+                <h5>Fullstack developer</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow" class="arrow"><i id="animation" class="fas fa-chevron-down"></i></div>
+            <div id="about" style="display: none;"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque doloribus voluptatem laborum minima fuga! Ut debitis perferendis, unde animi praesentium similique quisquam modi, facere dicta aliquam beatae nam quia nihil.</p></div>
+            <div class="form">
+                <div><p>deixe seu contato</p></div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email :)">
+                    <button>enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var about = document.getElementById('about');
+            about.classList.toggle('active');
+        }
+    </script>
+    
+</body>
+</html>
